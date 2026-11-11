@@ -1,0 +1,27 @@
+HASIL PEMERIKSAAN DUMP DATABASE perpustakaan_db
+
+Pemeriksaan dilakukan terhadap file SQL yang dikirim, bukan terhadap server
+database yang sedang berjalan.
+
+1. Struktur inti SPK tersedia:
+   kriteria, bobot_ahp, perbandingan_ahp, skala_nilai, nilai_buku, hasil_saw.
+2. Struktur buku sudah mencakup metadata bahasa, jumlah halaman, tingkat
+   kesulitan, stok, penerbit, tahun terbit, kategori, serta jumlah peminjaman.
+3. Personalisasi memiliki tabel preferensi_kategori, riwayat_pencarian,
+   rating_buku, dan simpan_buku.
+4. Data hasil_saw yang diekspor memiliki nilai untuk buku, tetapi ranking
+   seluruh baris bernilai NULL pada dump. Perlu jalankan ulang perhitungan.
+5. Tabel nilai_buku memuat C1-C6 untuk sebagian besar buku, tetapi tidak tampak
+   pasangan nilai untuk C7 (Minat Kategori) dan C8 (Kemiripan Buku). Generate
+   nilai harus dijalankan atau logika SAW harus memastikan nilai dinamis
+   dihasilkan saat menghitung.
+6. Tabel kriteria menggunakan ID 8 sampai 15 untuk C1-C8. Kode harus mengambil
+   ID kriteria aktif dari database, bukan mengasumsikan ID dimulai dari 1.
+7. Peminjaman menggunakan status teks seperti menunggu, ditolak, terlambat,
+   dan dikembalikan pada data contoh. Periksa kondisi status pada statistik dan
+   pengingat agar selaras dengan status yang dipakai aplikasi.
+8. File dump berisi data akun pengguna dan hash password. Jangan membagikannya
+   secara publik.
+
+Batas pemeriksaan: tidak menjalankan aplikasi PHP terhadap database aktif;
+hasil query dan integrasi runtime masih perlu diuji pada lingkungan lokal.

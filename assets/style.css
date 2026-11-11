@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(
+        135deg,
+        #0f172a,
+        #111827,
+        #1e293b
+    );
+    min-height:100vh;
+    color:white;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    width:280px;
+    height:100vh;
+    position:fixed;
+    left:0;
+    top:0;
+
+    background:rgba(255,255,255,0.05);
+
+    backdrop-filter:blur(20px);
+
+    border-right:1px solid rgba(255,255,255,0.1);
+
+    padding:25px;
+
+    overflow-y:auto;
+}
+
+.logo{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.logo h3{
+    color:white;
+    font-weight:700;
+}
+
+.logo p{
+    color:#94a3b8;
+}
+
+.menu-title{
+    color:#64748b;
+    font-size:12px;
+    letter-spacing:2px;
+    margin:20px 0 10px;
+}
+
+.sidebar a{
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    text-decoration:none;
+
+    color:#cbd5e1;
+
+    padding:15px;
+
+    border-radius:16px;
+
+    transition:.3s;
+}
+
+.sidebar a:hover{
+
+    background:rgba(255,255,255,0.08);
+
+    transform:translateX(5px);
+}
+
+.sidebar a.active{
+
+    background:linear-gradient(
+        135deg,
+        #6366f1,
+        #8b5cf6
+    );
+
+    color:white;
+
+    box-shadow:0 10px 30px rgba(99,102,241,.4);
+}
+
+/* MAIN */
+
+.main{
+    margin-left:280px;
+    padding:30px;
+}
+
+/* TOPBAR */
+
+.topbar{
+
+    background:rgba(255,255,255,0.05);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    border-radius:24px;
+
+    padding:25px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+}
+
+.topbar h2{
+    font-weight:700;
+}
+
+.topbar p{
+    color:#94a3b8;
+}
+
+.profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+}
+
+.profile img{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    border:3px solid #6366f1;
+}
+
+/* WELCOME */
+
+.welcome-box{
+
+    background:linear-gradient(
+        135deg,
+        #6366f1,
+        #8b5cf6,
+        #ec4899
+    );
+
+    border-radius:30px;
+
+    padding:40px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+    overflow:hidden;
+
+    position:relative;
+}
+
+.welcome-box::before{
+
+    content:'';
+
+    width:250px;
+
+    height:250px;
+
+    background:rgba(255,255,255,.15);
+
+    position:absolute;
+
+    right:-80px;
+
+    top:-80px;
+
+    border-radius:50%;
+}
+
+.welcome-box h3{
+    font-weight:700;
+}
+
+.welcome-box p{
+    max-width:600px;
+}
+
+/* INFO CARD */
+
+.info-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:25px;
+
+    padding:30px;
+
+    color:white;
+
+    transition:.4s;
+
+    cursor:pointer;
+}
+
+.info-card:hover{
+
+    transform:translateY(-10px);
+}
+
+.info-card i{
+
+    font-size:40px;
+
+    margin-bottom:15px;
+}
+
+.info-card h3{
+
+    font-size:32px;
+
+    font-weight:700;
+}
+
+.info-card p{
+
+    opacity:.9;
+}
+
+/* CARD WARNA */
+
+.bg1{
+    background:linear-gradient(135deg,#3b82f6,#2563eb);
+}
+
+.bg2{
+    background:linear-gradient(135deg,#22c55e,#16a34a);
+}
+
+.bg3{
+    background:linear-gradient(135deg,#f59e0b,#ea580c);
+}
+
+.bg4{
+    background:linear-gradient(135deg,#ec4899,#db2777);
+}
+
+.bg5{
+    background:linear-gradient(135deg,#8b5cf6,#7c3aed);
+}
+
+/* MENU CARD */
+
+.menu-card{
+
+    background:rgba(255,255,255,0.05);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    height:100%;
+}
+
+.menu-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#6366f1;
+}
+
+.menu-card i{
+
+    font-size:45px;
+
+    color:#8b5cf6;
+
+    margin-bottom:15px;
+}
+
+.menu-card h5{
+    color:white;
+}
+
+.menu-card p{
+    color:#94a3b8;
+}
+
+/* BUTTON */
+
+.btn-custom{
+
+    border:none;
+
+    border-radius:14px;
+
+    padding:10px 25px;
+
+    font-weight:600;
+}
+
+/* CHART */
+
+.chart-box{
+
+    background:rgba(255,255,255,0.05);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    border-radius:25px;
+
+    padding:30px;
+}
+
+.chart-box h4{
+    color:white;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#6366f1;
+    border-radius:20px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .sidebar{
+        position:relative;
+        width:100%;
+        height:auto;
+    }
+
+    .main{
+        margin-left:0;
+    }
+
+    .welcome-box{
+        flex-direction:column;
+        text-align:center;
+        gap:20px;
+    }
+}
+/* =====================================================
+   FIX TOTAL HORIZONTAL SCROLL MOBILE
+===================================================== */
+
+html,
+body {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    overflow-x: clip !important;
+}
+
+/* Semua elemen tidak boleh keluar layar */
+*,
+*::before,
+*::after {
+    box-sizing: border-box !important;
+    max-width: 100%;
+}
+
+/* Container utama */
+.container,
+.container-fluid {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+/* Bootstrap row sering menjadi penyebab */
+.row {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* Kolom Bootstrap */
+[class*="col-"] {
+    max-width: 100%;
+}
+
+/* Gambar */
+img {
+    max-width: 100% !important;
+    height: auto;
+}
+
+/* Video / iframe */
+iframe,
+video {
+    max-width: 100% !important;
+}
+
+/* Tabel */
+table {
+    max-width: 100%;
+}
+
+/* Main */
+.main {
+    max-width: 100% !important;
+    overflow-x: clip !important;
+}
+
+/* Sidebar */
+.sidebar {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+
+/* =====================================================
+   MOBILE FIX
+===================================================== */
+
+@media screen and (max-width: 768px) {
+
+    html,
+    body {
+        width: 100vw !important;
+        max-width: 100vw !important;
+
+        overflow-x: clip !important;
+        overflow-y: auto !important;
+
+        position: relative;
+        left: 0;
+        right: 0;
+    }
+
+    .sidebar {
+        position: relative !important;
+
+        width: 100% !important;
+        max-width: 100vw !important;
+
+        height: auto !important;
+
+        left: 0 !important;
+        right: 0 !important;
+
+        overflow-x: hidden !important;
+    }
+
+    .main {
+        width: 100% !important;
+        max-width: 100vw !important;
+
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+
+        padding: 15px !important;
+
+        overflow-x: clip !important;
+    }
+
+    .topbar,
+    .welcome-box,
+    .info-card,
+    .menu-card,
+    .chart-box {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        min-width: 0 !important;
+    }
+
+    .welcome-box {
+        overflow: hidden !important;
+    }
+
+    /* Flex tidak boleh memaksa layar melebar */
+    .topbar,
+    .welcome-box,
+    .profile {
+        min-width: 0 !important;
+    }
+
+    /* Teks panjang tidak membuat layar melebar */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    span,
+    a {
+        max-width: 100% !important;
+        overflow-wrap: anywhere !important;
+        word-break: break-word;
+    }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media screen and (max-width: 480px) {
+
+    html,
+    body {
+        width: 100vw !important;
+        max-width: 100vw !important;
+        overflow-x: clip !important;
+    }
+
+    .main {
+        width: 100% !important;
+        max-width: 100vw !important;
+
+        padding: 10px !important;
+    }
+
+    .sidebar {
+        width: 100% !important;
+        max-width: 100vw !important;
+    }
+}

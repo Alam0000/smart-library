@@ -1,0 +1,7 @@
+# Abaikan koneksi database lokal jika berisi password sensitif
+# koneksi.php
+
+# Abaikan file temp / OS
+.DS_Store
+Thumbs.db
+*.log
