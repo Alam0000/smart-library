@@ -16,7 +16,7 @@
 
 | Hasil Rekomendasi Home| Rekomendasi Hasil perhitungan Dashboard |
 |---|---|
-| ![Hasil Rekomdasi](rekomendasi.png) | ![Rekomendasi SAW](rekomendasi.png)
+| ![Hasil Rekomdasi](rekomendasi.png) | ![Rekomendasi SAW](rekomendasi_admin.png)
 
 ---
 
