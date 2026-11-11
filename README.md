@@ -12,11 +12,11 @@
 
 | Halaman Utama Katalog | Dashboard Admin & SPK |
 |---|---|
-| ![Katalog Buku](assets/img/sekolah.jpeg) | ![Dashboard Admin](assets/img/bg1.png) |
+| ![Halaman Utama](home.png) | ![Dashboard Admin](dashboard.png) |
 
-| Matriks AHP & Konsistensi | Rekomendasi Buku (SAW) |
+| Hasil Rekomendasi Home| Rekomendasi Hasil perhitungan Dashboard |
 |---|---|
-| ![Kalkulasi AHP](gambar/informatika.jpeg) | ![Rekomendasi SAW](gambar/OIP.jpg) |
+| ![Hasil Rekomdasi](rekomendasi.png) | ![Rekomendasi SAW](rekomendasi.png)
 
 ---
 
